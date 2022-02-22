@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: 'Segoe UI';
@@ -141,15 +145,15 @@ nav {
 
 main section {
     width: 90%;
-    margin: 0 auto;
+    margin: 50px auto;
 }
 
 .section-title {
     width: fit-content;
     margin: 10px auto;
-    color: rgb(29, 37, 110);
+    color: rgb(1, 12, 119);
     font-size: 2em;
-    border-bottom: 10px solid rgb(29, 37, 110);;
+    border-bottom: 10px solid rgb(1, 12, 119);;
 }
 
 .services .section-body {
@@ -165,7 +169,7 @@ main section {
     ? each service is contained within a .service-box 
     */
     height: 300px;
-    max-width: 275px;
+    max-width: 300px;
     display: flex;
     align-items: flex-end;
     border-radius: 10px 10px 0 0;
@@ -224,13 +228,14 @@ main section {
     border-radius: 10px 10px 0 0;
     margin: 45px 0;
     justify-content: space-around;
+    /* border: 1px solid; */
 }
 
 .testimonial-box {
     box-shadow: 0 0 5px 0.5px grey;
     max-width: 300px;
-    min-width: 200px;
-    min-height: 250px;
+    min-width: 250px;
+    min-height: 275px;
     text-align: center;
     padding: 5px;
     padding-top: 15px;
@@ -276,6 +281,84 @@ main section {
     font-weight: bold;
     margin: 0;
 }
+
+section.team {
+    height: 450px;
+    width: 90%;
+}
+
+section.team .section-body {
+    /* border: 1px solid; */
+    height: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+}
+
+div.team-member {
+    display: flex;
+    height: 80%;
+    min-width: 300px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 5px;
+    box-shadow: 0 0 .5em 0 grey;
+    border-radius: .5em;
+    text-align: center;
+    transition: all .25s;
+}
+
+
+div.team-member:hover {
+    background-color: rgb(1, 12, 119);
+    color: white;
+}
+
+div.team-member .team-member-img-container{
+    height: 150px;
+    width: 150px;
+}
+
+div.team-member .team-member-img-container > img{
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+div.team-member .team-member-details > p{
+    margin: 0;
+}
+
+div.team-member .team-member-details p:first-child{
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: .05em;
+}
+
+div.team-member .team-member-details p:nth-child(2){
+    font-size: 1.25em;
+    color: grey;
+}
+
+div.team-member .team-member-links{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+div.team-member .social-link-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 1px solid grey;
+    border-radius: .25em;
+    display: none;
+}
+
 
 footer {
     height: 50px;
