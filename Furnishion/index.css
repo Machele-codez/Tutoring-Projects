@@ -149,6 +149,7 @@ main section {
 }
 
 .section-title {
+    text-transform: capitalize;
     width: fit-content;
     margin: 10px auto;
     color: rgb(1, 12, 119);
