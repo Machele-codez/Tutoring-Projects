@@ -8,11 +8,19 @@ body {
     background-color: rgb(240, 242, 245);
 }
 
+h1 {
+    text-align: center;
+    color: hsl(214, 89%, 47%);
+    font-size: 3em;
+    letter-spacing: .1em;
+    font-family: serif;
+}
+
 form {
     width: 450px;
     min-height: 450px;
     margin: 0 auto;
-    margin-top: 20vh;
+    margin-top: 5vh;
 
     background-color: white;
     padding: .5em;
