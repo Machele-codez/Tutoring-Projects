@@ -35,14 +35,15 @@ nav .links {
 
 nav .actions {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     flex-grow: 1;
 }
 
 .get-started {
+    font-size: 1.1rem;
     border: 2px solid hsl(273, 59%, 50%);
     border-radius: .25em;
-    padding: .75em 1.5em;
+    padding: .5em 1em;
     background-color: hsl(273, 59%, 50%);
     color: white;
 }
@@ -50,4 +51,23 @@ nav .actions {
 main {
     height: 90vh;
     /* background-color: hsl(273, 59%, 30%); */
+    display: flex;
 }
+
+.instructions {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    display: initial;
+    margin: 50px auto 0 auto;
+    width: 70%;
+}
+
+.instructions > :nth-child(-n + 2) {
+    text-align: center;
+}
+
+.instructions > :nth-child(2) {
+    color: gray;
+}
+
+
