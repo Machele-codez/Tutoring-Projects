@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+nav {
+    height: 10vh;
+    background-color: hsl(273, 59%, 30%);
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2em;
+}
+
+nav .brand {
+    letter-spacing: .1em;
+    font-size: 1.75rem;
+    font-weight: normal;
+    color:hsl(273, 59%, 80%);
+    flex-grow: 1;
+}
+
+nav .links {
+    flex-grow: 3;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav .actions {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.get-started {
+    border: 2px solid hsl(273, 59%, 50%);
+    border-radius: .25em;
+    padding: .75em 1.5em;
+    background-color: hsl(273, 59%, 50%);
+    color: white;
+}
+
+main {
+    height: 90vh;
+    /* background-color: hsl(273, 59%, 30%); */
+}
