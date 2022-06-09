@@ -70,3 +70,11 @@ nav {
     background-color: black;
     border-radius: 50%;
 }
+
+footer {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: grey;
+}
