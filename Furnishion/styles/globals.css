@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'Segoe UI';
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* nav bar */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(1, 12, 119);
+    position: fixed;
+    width: 100%;
+    z-index: 9;
+}
+
+.site-brand {
+    letter-spacing: 1px;
+    color: white;
+    font-size: 2em;
+    font-weight: bolder;
+    margin-left: 20px;
+}
+
+.nav-items {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+.nav-item {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 1.2em;
+    letter-spacing: .5px;
+    transition: all .2s;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-item:hover {
+    border-bottom: 2px solid white;
+}
+
+.nav-item-active {
+    border-color: white;
+}
+
+/* the element that creates space ~equal to the nav height so that the rest of the page follows */
+.nav-offset {
+    height: 80px;
+}
+
+.dot-separator {
+    display: inline-block;
+    width: .5em;
+    height: .5em;
+    background-color: black;
+    border-radius: 50%;
+}
